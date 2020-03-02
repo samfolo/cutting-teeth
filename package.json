@@ -1,0 +1,23 @@
+{
+  "name": "algorithm-tdd",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "babel-jest": "^25.1.0",
+    "jest": "^25.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samfolo/cutting-teeth.git"
+  },
+  "bugs": {
+    "url": "https://github.com/samfolo/cutting-teeth/issues"
+  },
+  "homepage": "https://github.com/samfolo/cutting-teeth#readme",
+  "description": ""
+}
