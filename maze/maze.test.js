@@ -4,9 +4,15 @@ const isValidMaze = require('./maze');
 // cannot move diagonally
 
 describe('isValidMaze', () => {
-  it('takes a maze [[0, 1], [0,1]], with  and returns true', () => {
-    const testMaze = [[0, 1], [0,1]];
+  it('takes a maze [[0, 1], [0, 1]], with  and returns true', () => {
+    const testMaze = [[0, 1], [0, 1]];
 
     expect(isValidMaze(testMaze)).toBe(true);
+  });
+
+  it('takes a maze [[1, 1], [0, 0]], with  and returns true', () => {
+    const testMaze = [[1, 1], [0, 0]];
+
+    expect(isValidMaze(testMaze)).toBe(false);
   });
 });
