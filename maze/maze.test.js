@@ -15,4 +15,10 @@ describe('isValidMaze', () => {
 
     expect(isValidMaze(testMaze)).toBe(false);
   });
+
+  it('takes a maze [[1, 1, 0], [0, 0, 0], [0, 1, 1]], with  and returns false', () => {
+    const testMaze = [[1, 1, 0], [0, 0, 0], [1, 1, 1]];
+
+    expect(isValidMaze(testMaze)).toBe(false);
+  });
 });
