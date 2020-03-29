@@ -94,7 +94,7 @@ function queens(p, size) {
     }
     
     const lastCoord = toCoordinate(stack[stack.length - 1]);
-    const rowStart = stack.length > 1 ? lastCoord[1] : 0;
+    const rowStart = stack.length > 1 ? lastCoord[1] + 1 : 0;
     
     for (let row = rowStart; row < size; row++) {
       for (let col = 0; col < size; col++) {
@@ -122,4 +122,4 @@ function queens(p, size) {
   return res.stack;
 }
 
-console.log(queens('e4', 7))
+console.log(queens('c6', 10))
