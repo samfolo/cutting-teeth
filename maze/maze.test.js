@@ -16,7 +16,7 @@ describe('isValidMaze', () => {
     expect(isValidMaze(testMaze)).toBe(false);
   });
 
-  it('takes a maze [[1, 1, 0], [0, 0, 0], [1, 1, 1]], with and returns false', () => {
+  it('takes a maze [[1, 1, 0], [1, 0, 0], [1, 1, 1]], with and returns false', () => {
     const testMaze = [[1, 1, 0], [1, 0, 0], [1, 1, 1]];
 
     expect(isValidMaze(testMaze)).toBe(false);
@@ -34,9 +34,15 @@ describe('isValidMaze', () => {
     expect(isValidMaze(testMaze)).toBe(true);
   });
 
-  it('takes a maze [[1, 1, 1, 1], [0, 0, 0, 1], [1, 1, 0, 1], [1, 1, 0, 0]], with and returns true', () => {
-    const testMaze = [[1, 1, 1, 1], [0, 0, 0, 1], [1, 1, 0, 1], [1, 1, 0, 0]];
+  it('takes a maze [[1, 1, 1, 1], [0, 0, 0, 1], [1, 1, 0, 1], [1, 1, 0, 1]], with and returns true', () => {
+    const testMaze = [[1, 1, 1, 1], [0, 0, 0, 1], [1, 1, 0, 1], [1, 1, 0, 1]];
 
     expect(isValidMaze(testMaze)).toBe(true);
+  });
+
+  it('takes a maze [[1, 1, 0, 1], [1, 1, 0, 1], [1, 0, 0, 1], [0, 1, 1, 1]], with and returns false', () => {
+    const testMaze = [[1, 1, 0, 1], [1, 1, 0, 1], [1, 0, 0, 1], [0, 1, 1, 1]];
+
+    expect(isValidMaze(testMaze)).toBe(false);
   });
 });
