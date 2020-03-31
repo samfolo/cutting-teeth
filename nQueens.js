@@ -122,4 +122,4 @@ function queens(p, size) {
   return res.stack;
 }
 
-console.log(queens('c6', 10))
+console.log(queens('a2', 4))
