@@ -10,7 +10,7 @@
   "dependencies": {
     "babel-jest": "^25.1.0",
     "jest": "^25.1.0",
-    "lodash": "^4.17.15"
+    "lodash": "^4.17.21"
   },
   "repository": {
     "type": "git",
